@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrepper{
+    width:100%;
+    height: 100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(165, 140, 108);
+}
+.game{
+    height: 500px; 
+    margin:0 auto; 
+    width:67.5%;
+    /* background-color: beige; */
+    background:linear-gradient(rgb(158, 155, 156),rgb(255, 162, 0),rgb(128, 124, 0));
+    position: relative;
+}
+.game1,.game3{
+    width:50px;
+    height: 200px;
+    background-color: black;
+}
+.game1{
+    position: absolute;
+    top:170px;
+    animation:carry 3s 0s linear infinite;
+
+}
+@keyframes carry{
+    0%{
+        top:170px;
+    }
+    25%{
+        top:0;
+    }
+    50%{
+        top:170px;
+    }
+    75%{
+        top:300px;
+    }
+    100%{
+        top:170px;
+    }
+}
+.game3{
+    position: absolute;
+    top:170px; 
+    left:986px;
+    animation:carry1 3s 0s linear infinite;
+    
+}
+@keyframes carry1{
+    0%{
+        top:170px;
+    }
+    25%{
+        top:300px;
+    }
+    50%{
+        top: 170px;
+    }
+    75%{
+        top:0;
+    }
+    100%{
+        top:170px;
+    }
+}
+.game2{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top:200px;
+    left:450px;
+    animation:harry 4.5s 0s linear infinite;
+}
+@keyframes harry{
+   0%{
+    transform: rotate(0); top:200px;left:5% ;
+   } 
+   50%{
+    transform: rotate(360deg); top:200px;left:89%;
+   }
+   100%{
+    transform: rotate(0); top:200px;left:5%;
+   }
+}
